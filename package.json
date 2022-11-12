@@ -1,0 +1,27 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "description": "learn_nodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "MinhChung",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monotarokrb/nodeJS_lesson1.git"
+  },
+  "keywords": [
+    "monotaro"
+  ],
+  "bugs": {
+    "url": "https://github.com/monotarokrb/nodeJS_lesson1/issues"
+  },
+  "homepage": "https://github.com/monotarokrb/nodeJS_lesson1#readme"
+}
