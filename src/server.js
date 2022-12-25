@@ -1,13 +1,19 @@
 import express from 'express';
 import configViewEngine from './configs/viewEngine';
+
+
+require ('dotenv').config();
+
 const app = express();
-const port = 3000
+const port = process.env.PORT;
+//console.log('>>>check port: ', port);
 
 configViewEngine(app);
+
+app.use(express.static('public'))
 app.get('/', (req, res) => {
-  //res.send('Hello World! the first lesson with expressjs')
-  //res.send('index.html')
   res.render('index.ejs')
+
 })
 
 app.listen(port, () => {
